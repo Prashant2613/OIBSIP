@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Nova - Build Smarter with Artificial Intelligence. AI solutions that help businesses automate their work and grow faster.">
+    <title>AI Nova | Artificial Intelligence Solutions</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ========================================
+         Navigation Bar
+         ======================================== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo" aria-label="AI Nova Home">
+                <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="currentColor"/>
+                    <path d="M8 12h16M8 16h12M8 20h8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                AI Nova
+            </a>
+            
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+                <li role="none"><a href="#features" class="nav-link" role="menuitem">Features</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#testimonials" class="nav-link" role="menuitem">Testimonials</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                <li class="nav-cta" role="none"><a href="#contact" class="btn btn-primary" role="menuitem">Get Started</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         Hero Section
+         ======================================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">New: AI Nova 2.0 Released</div>
+                <h1 class="hero-title" id="hero-title">Build Smarter with <span class="highlight">Artificial Intelligence</span></h1>
+                <p class="hero-subtitle">AI solutions that help businesses automate their work and grow faster. Transform your workflow with cutting-edge machine learning technology.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        Get Started
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Explore Features</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="500">500+</div>
+                        <div class="stat-label">Companies Transformed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="99">99.9%</div>
+                        <div class="stat-label">Uptime Guarantee</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="40">40%</div>
+                        <div class="stat-label">Productivity Increase</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="24">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Visual - AI/Tech Illustration -->
+            <div class="hero-visual" aria-hidden="true">
+                <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background circles -->
+                    <circle cx="250" cy="250" r="200" stroke="url(#gradient1)" stroke-width="2" stroke-dasharray="10 10" opacity="0.3"/>
+                    <circle cx="250" cy="250" r="160" stroke="url(#gradient2)" stroke-width="1.5" stroke-dasharray="8 8" opacity="0.2"/>
+                    <circle cx="250" cy="250" r="120" stroke="#2563EB" stroke-width="1" stroke-dasharray="5 10" opacity="0.15"/>
+                    
+                    <!-- Central AI brain/core -->
+                    <g filter="drop-shadow(0 8px 24px rgba(37, 99, 235, 0.3))">
+                        <ellipse cx="250" cy="250" rx="80" ry="60" fill="url(#coreGradient)" stroke="#38BDF8" stroke-width="1.5"/>
+                        <!-- Neural network lines -->
+                        <path d="M250 190 Q280 210 250 230 Q220 250 250 270 Q280 290 250 310" stroke="#38BDF8" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8"/>
+                        <path d="M190 250 Q210 220 230 250 Q250 280 270 250 Q290 220 310 250" stroke="#2563EB" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8"/>
+                        <circle cx="250" cy="250" r="25" fill="url(#innerCore)" stroke="#38BDF8" stroke-width="1"/>
+                        <circle cx="250" cy="250" r="12" fill="#38BDF8" opacity="0.9"/>
+                    </g>
+                    
+                    <!-- Floating nodes -->
+                    <g class="nodes">
+                        <circle cx="100" cy="120" r="8" fill="#2563EB" opacity="0.7">
+                            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="420" cy="100" r="6" fill="#38BDF8" opacity="0.7">
+                            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="80" cy="380" r="7" fill="#2563EB" opacity="0.7">
+                            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="430" cy="400" r="9" fill="#38BDF8" opacity="0.7">
+                            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.8s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="150" cy="450" r="5" fill="#2563EB" opacity="0.7">
+                            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="350" cy="450" r="6" fill="#38BDF8" opacity="0.7">
+                            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3.2s" repeatCount="indefinite"/>
+                        </circle>
+                    </g>
+                    
+                    <!-- Connection lines -->
+                    <g stroke="#2563EB" stroke-width="1" opacity="0.2" stroke-dasharray="5 5">
+                        <line x1="250" y1="190" x2="100" y2="120"/>
+                        <line x1="250" y1="190" x2="420" y2="100"/>
+                        <line x1="250" y1="310" x2="80" y2="380"/>
+                        <line x1="250" y1="310" x2="430" y2="400"/>
+                        <line x1="170" y1="250" x2="150" y2="450"/>
+                        <line x1="330" y1="250" x2="350" y2="450"/>
+                    </g>
+                    
+                    <!-- Data particles -->
+                    <g class="particles">
+                        <circle cx="180" cy="180" r="3" fill="#38BDF8">
+                            <animateTransform attributeName="transform" type="translate" values="0,0;-20,-15;0,0" dur="4s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="320" cy="180" r="2" fill="#2563EB">
+                            <animateTransform attributeName="transform" type="translate" values="0,0;15,-10;0,0" dur="3.5s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="1;0.2;1" dur="3.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="180" cy="320" r="2.5" fill="#38BDF8">
+                            <animateTransform attributeName="transform" type="translate" values="0,0;-15,20;0,0" dur="4.5s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="1;0.2;1" dur="4.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="320" cy="320" r="3" fill="#2563EB">
+                            <animateTransform attributeName="transform" type="translate" values="0,0;20,15;0,0" dur="3.8s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="1;0.2;1" dur="3.8s" repeatCount="indefinite"/>
+                        </circle>
+                    </g>
+                    
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#2563EB"/>
+                            <stop offset="100%" stop-color="#38BDF8"/>
+                        </linearGradient>
+                        <linearGradient id="gradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#38BDF8"/>
+                            <stop offset="100%" stop-color="#2563EB"/>
+                        </linearGradient>
+                        <radialGradient id="coreGradient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#1E293B"/>
+                            <stop offset="100%" stop-color="#0F172A"/>
+                        </radialGradient>
+                        <radialGradient id="innerCore" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#38BDF8"/>
+                            <stop offset="100%" stop-color="#2563EB"/>
+                        </radialGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Features Section
+         ======================================== -->
+    <section class="features section" id="features" aria-labelledby="features-title">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-tag">Core Features</span>
+                <h2 class="section-title" id="features-title">Everything you need to <br>scale with AI</h2>
+                <div class="section-divider"></div>
+            </header>
+            
+            <div class="features-grid">
+                <!-- Feature 1: AI Automation -->
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 17h8M12 17v4"/>
+                            <path d="M6 7h12M6 11h8M10 15h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AI Automation</h3>
+                    <p class="feature-description">Automate repetitive tasks and complex workflows with our advanced AI models. Reduce manual work by up to 80% and let your team focus on what matters most.</p>
+                </article>
+                
+                <!-- Feature 2: Lightning Fast -->
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">Built on optimized infrastructure with sub-100ms response times. Process thousands of requests per second with enterprise-grade performance and reliability.</p>
+                </article>
+                
+                <!-- Feature 3: Secure Platform -->
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Secure Platform</h3>
+                    <p class="feature-description">Bank-level encryption, SOC 2 compliance, and advanced access controls. Your data never leaves your control with on-premise deployment options available.</p>
+                </article>
+                
+                <!-- Feature 4: Smart Analytics -->
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Analytics</h3>
+                    <p class="feature-description">Real-time dashboards and predictive insights powered by ML. Make data-driven decisions with automated reports and anomaly detection.</p>
+                </article>
+                
+                <!-- Feature 5: Easy Integration -->
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16v16H4z"></path>
+                            <path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Easy Integration</h3>
+                    <p class="feature-description">Connect with 100+ tools you already use. REST API, GraphQL, and native integrations with Slack, Notion, Salesforce, and more.</p>
+                </article>
+                
+                <!-- Feature 6: 24/7 Support -->
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-description">Dedicated success team available around the clock. From onboarding to optimization, we're here to ensure you get maximum value from AI Nova.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         About Section
+         ======================================== -->
+    <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <header class="section-header">
+                        <span class="section-tag">About Us</span>
+                        <h2 class="section-title" id="about-title">Making AI accessible<br>for every business</h2>
+                        <div class="section-divider"></div>
+                    </header>
+                    
+                    <p class="about-description">AI Nova helps businesses automate repetitive tasks using modern Artificial Intelligence solutions. Our goal is to make AI simple, accessible, and powerful for everyone — from startups to enterprises.</p>
+                    
+                    <div class="about-points">
+                        <div class="about-point">
+                            <div class="point-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <span class="point-text">Founded by AI researchers from top universities</span>
+                        </div>
+                        <div class="about-point">
+                            <div class="point-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <span class="point-text">Trusted by 500+ companies worldwide</span>
+                        </div>
+                        <div class="about-point">
+                            <div class="point-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                            </div>
+                            <span class="point-text">99.9% uptime with enterprise-grade infrastructure</span>
+                        </div>
+                        <div class="about-point">
+                            <div class="point-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <span class="point-text">Committed to ethical AI and data privacy</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">
+                        Learn More About Us
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-image" aria-hidden="true">
+                        <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Dashboard mockup -->
+                            <rect x="20" y="20" width="460" height="360" rx="16" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+                            
+                            <!-- Header bar -->
+                            <rect x="20" y="20" width="460" height="60" rx="16" fill="#1E293B"/>
+                            <circle cx="60" cy="50" r="12" fill="#2563EB" opacity="0.2"/>
+                            <circle cx="60" cy="50" r="6" fill="#2563EB"/>
+                            <rect x="90" y="35" width="120" height="12" rx="6" fill="#2563EB" opacity="0.2"/>
+                            <rect x="90" y="55" width="80" height="8" rx="4" fill="#38BDF8" opacity="0.3"/>
+                            
+                            <!-- Sidebar -->
+                            <rect x="20" y="90" width="80" height="280" rx="8" fill="#1E293B"/>
+                            <circle cx="60" cy="130" r="10" fill="#2563EB" opacity="0.2"/>
+                            <circle cx="60" cy="130" r="5" fill="#2563EB"/>
+                            <circle cx="60" cy="180" r="10" fill="#334155"/>
+                            <circle cx="60" cy="230" r="10" fill="#334155"/>
+                            <circle cx="60" cy="280" r="10" fill="#334155"/>
+                            <circle cx="60" cy="330" r="10" fill="#334155"/>
+                            
+                            <!-- Main content area -->
+                            <rect x="115" y="90" width="355" height="280" rx="8" fill="#1E293B"/>
+                            
+                            <!-- Metric cards -->
+                            <rect x="130" y="105" width="155" height="80" rx="8" fill="#0F172A" stroke="#334155"/>
+                            <rect x="140" y="115" width="60" height="8" rx="4" fill="#94A3B8"/>
+                            <rect x="140" y="130" width="80" height="16" rx="4" fill="#38BDF8"/>
+                            <rect x="140" y="155" width="100" height="8" rx="4" fill="#2563EB" opacity="0.3"/>
+                            
+                            <rect x="305" y="105" width="155" height="80" rx="8" fill="#0F172A" stroke="#334155"/>
+                            <rect x="315" y="115" width="50" height="8" rx="4" fill="#94A3B8"/>
+                            <rect x="315" y="130" width="90" height="16" rx="4" fill="#38BDF8"/>
+                            <rect x="315" y="155" width="110" height="8" rx="4" fill="#2563EB" opacity="0.3"/>
+                            
+                            <!-- Chart area -->
+                            <rect x="130" y="205" width="330" height="155" rx="8" fill="#0F172A" stroke="#334155"/>
+                            
+                            <!-- Chart bars -->
+                            <rect x="160" y="300" width="30" height="40" rx="4" fill="#2563EB" opacity="0.6"/>
+                            <rect x="200" y="270" width="30" height="70" rx="4" fill="#2563EB"/>
+                            <rect x="240" y="290" width="30" height="50" rx="4" fill="#2563EB" opacity="0.6"/>
+                            <rect x="280" y="250" width="30" height="90" rx="4" fill="#38BDF8"/>
+                            <rect x="320" y="280" width="30" height="60" rx="4" fill="#2563EB" opacity="0.6"/>
+                            <rect x="360" y="260" width="30" height="80" rx="4" fill="#2563EB"/>
+                            <rect x="400" y="290" width="30" height="50" rx="4" fill="#2563EB" opacity="0.6"/>
+                            
+                            <!-- Line chart -->
+                            <path d="M160 280 Q200 240 240 260 Q280 220 320 250 Q360 200 400 240" stroke="#38BDF8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Testimonials Section
+         ======================================== -->
+    <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title" id="testimonials-title">Loved by teams<br>everywhere</h2>
+                <div class="section-divider"></div>
+            </header>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"AI Nova transformed our workflow and saved hours every week. The automation features are incredible — we've reduced manual data entry by 85%."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">RS</div>
+                        <div class="author-info">
+                            <div class="author-name">Rahul Sharma</div>
+                            <div class="author-role">CTO at TechFlow Inc.</div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Testimonial 2 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"The best AI platform we've used. Implementation took days, not months. The support team is incredibly responsive and genuinely cares about our success."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">MC</div>
+                        <div class="author-info">
+                            <div class="author-name">Maria Chen</div>
+                            <div class="author-role">VP Operations at ScaleUp</div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Testimonial 3 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Security was our top concern and AI Nova exceeded expectations. SOC 2 compliant, on-premise option, and full data ownership. Highly recommended for enterprise."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">JK</div>
+                        <div class="author-info">
+                            <div class="author-name">James Kim</div>
+                            <div class="author-role">Security Lead at FinCorp</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA Section
+         ======================================== -->
+    <section class="cta section" aria-labelledby="cta-title">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" id="cta-title">Ready to transform your business?</h2>
+                <p class="cta-text">Join 500+ companies already using AI Nova to automate workflows, increase productivity, and scale faster with artificial intelligence.</p>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        Start Free Trial
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">See All Features</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer class="footer" id="contact" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo" aria-label="AI Nova Home">
+                        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <rect width="32" height="32" rx="8" fill="currentColor"/>
+                            <path d="M8 12h16M8 16h12M8 20h8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                        AI Nova
+                    </a>
+                    <p class="footer-tagline">Build smarter with artificial intelligence. AI solutions that help businesses automate their work and grow faster.</p>
+                    <div class="social-links" role="list" aria-label="Social media links">
+                        <a href="#" class="social-link" aria-label="Follow us on Twitter" role="listitem">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on LinkedIn" role="listitem">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on GitHub" role="listitem">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on YouTube" role="listitem">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 6.781a2.445 2.445 0 00-.68-1.682C21.05 3.312 12 3 12 3s-9.05.312-10.32 2.099A2.445 2.445 0 001 6.781V12c0 5.214.312 5.524 2.099 5.781a2.445 2.445 0 001.68.682C13.95 21.688 24 21 24 21s9.05-.312 10.32-2.099a2.445 2.445 0 00.68-1.681V6.781zM10 15.5V9.5l6 3-6 3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Links -->
+                <nav class="footer-nav" aria-label="Product links">
+                    <h3 class="footer-title">Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features" class="footer-link">Features</a></li>
+                        <li><a href="#" class="footer-link">Pricing</a></li>
+                        <li><a href="#" class="footer-link">Integrations</a></li>
+                        <li><a href="#" class="footer-link">API Docs</a></li>
+                        <li><a href="#" class="footer-link">Changelog</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Company Links -->
+                <nav class="footer-nav" aria-label="Company links">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Press</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Contact Info -->
+                <address class="footer-contact" aria-label="Contact information">
+                    <h3 class="footer-title">Contact</h3>
+                    <a href="mailto:hello@ainova.ai" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        hello@ainova.ai
+                    </a>
+                    <a href="tel:+15551234567" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path></svg>
+                        +91 9310629395
+                    </a>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Gurugram, Haryana
+                    </div>
+                </address>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 AI Nova. All rights reserved.</p>
+                <nav class="footer-legal" aria-label="Legal links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms of  service">Terms of Service</a>
+                    <a href="#contact">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JavaScript (Minimal - Only for Interactions)
+         ======================================== -->
+    <script src="script.js"></script>
+</body>
+</html>
