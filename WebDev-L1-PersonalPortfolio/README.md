@@ -123,9 +123,7 @@ A modern and responsive landing page created for a fictional AI technology platf
 - Call-to-action section
 - Responsive design
 
-🔗 **GitHub:** [Add GitHub Link]
-
-🔗 **Live Demo:** [Add Live Demo Link]
+🔗 **GitHub:** [http://github.com/Prashant2613]
 
 ---
 
@@ -134,11 +132,9 @@ A modern and responsive landing page created for a fictional AI technology platf
 An AI-powered internship matching solution designed to help match students with suitable internship opportunities based on relevant information such as skills, academic performance, certifications, preferences, and internship requirements.
 
 **Technologies:**  
-[Add the exact technologies used in your project]
+[HTML, CSS]
 
-🔗 **GitHub:** [Add GitHub Link]
-
-🔗 **Live Demo:** [Add Live Demo Link]
+🔗 **GitHub:** [http://github.com/Prashant2613]
 
 ---
 
@@ -150,9 +146,9 @@ An AI-powered internship matching solution designed to help match students with 
 
 📧 Email: gabberpower124@gmail.com
 
-💼 LinkedIn: [Add LinkedIn Profile]
+💼 LinkedIn: [https://www.linkedin.com/in/prashant-singh-69448a328/]
 
-🐙 GitHub: [Add GitHub Profile]
+🐙 GitHub: [http://github.com/Prashant2613]
 
 ---
 
