@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern, responsive temperature converter supporting Celsius, Fahrenheit, and Kelvin with absolute zero validation.">
+    <title>Tempera | Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <main class="main-content">
+        <div class="converter-card">
+            <header class="converter-header">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        <path d="M12 18.31l-5.66-5.66a8 8 0 1 1 11.31 0z"/>
+                    </svg>
+                    <h1 class="app-title">Tempera</h1>
+                </div>
+                <p class="app-subtitle">Temperature Converter</p>
+            </header>
+
+            <form class="converter-form" id="converterForm" novalidate>
+                <div class="form-group">
+                    <label for="temperatureInput" class="form-label">
+                        <span class="label-text">Temperature</span>
+                        <span class="label-hint" aria-hidden="true">Enter a numeric value</span>
+                    </label>
+                    <div class="input-wrapper">
+                        <input 
+                            type="number" 
+                            id="temperatureInput" 
+                            class="form-input" 
+                            placeholder="e.g., 25.00" 
+                            step="any" 
+                            min="-459.67"
+                            autocomplete="off"
+                            aria-describedby="tempError"
+                            required
+                        >
+                        <span class="input-unit" aria-hidden="true" id="inputUnitDisplay">°C</span>
+                    </div>
+                    <div class="error-message" id="tempError" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="unitSelect" class="form-label">
+                        <span class="label-text">Input Unit</span>
+                    </label>
+                    <div class="select-wrapper">
+                        <select id="unitSelect" class="form-select" aria-describedby="unitError">
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                        </select>
+                        <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="error-message" id="unitError" role="alert" aria-live="polite"></div>
+                </div>
+
+                <button type="submit" class="convert-btn" id="convertBtn">
+                    <span class="btn-text">Convert Temperature</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M7 16l-4-4 4-4"/>
+                        <path d="M17 16l4-4-4-4"/>
+                        <path d="M12 12V4"/>
+                    </svg>
+                </button>
+            </form>
+
+            <section class="results-section" id="resultsSection" aria-live="polite" hidden>
+                <h2 class="results-title">Conversion Results</h2>
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Result cards will be injected here by JavaScript -->
+                </div>
+            </section>
+
+            <div class="error-banner" id="errorBanner" role="alert" aria-live="assertive" hidden>
+                <svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <p class="error-text" id="errorText"></p>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <p>Made from <strong>LOVE and HEART</strong> — BY Prashant Singh</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
